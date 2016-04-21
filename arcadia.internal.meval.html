@@ -1,0 +1,18 @@
+<html><head><meta charset="utf-8" /><link href="js/highlight/styles/github-gist.css" rel="stylesheet" /><script src="js/highlight/highlight.pack.js"></script><script src="js/markdown/markdown.min.js"></script><script src="js/arcadia-docs.js"></script><link href="style.css" rel="stylesheet" type="text/css" /><style type="text/css">.columns-1 { width:8.333333%;}
+.columns-2 { width:16.66667%;}
+.columns-3 { width:25%;}
+.columns-4 { width:33.33333%;}
+.columns-5 { width:41.66667%;}
+.columns-6 { width:50%;}
+.columns-7 { width:58.33333%;}
+.columns-8 { width:66.66666%;}
+.columns-9 { width:75%;}
+.columns-10 { width:83.33334%;}
+.columns-11 { width:91.66666%;}
+.columns-12 { width:100%;}</style><title>arcadia.internal.meval - Arcadia Documentation</title></head><body><div class="grid"><div class="sidebar columns-3"><h2>Namespaces</h2><ul><li><a href="arcadia.internal.macro.html">arcadia.internal.macro</a></li></ul><ul><li><a href="arcadia.literals.html">arcadia.literals</a></li></ul><ul><li><a href="arcadia.internal.zip-utils.html">arcadia.internal.zip-utils</a></li></ul><ul><li><a href="arcadia.internal.map-utils.html">arcadia.internal.map-utils</a></li></ul><ul><li><a href="arcadia.internal.editor-interop.html">arcadia.internal.editor-interop</a></li></ul><ul><li><a href="arcadia.internal.meval.html">arcadia.internal.meval</a></li></ul><ul><li><a href="arcadia.linear.html">arcadia.linear</a></li></ul><ul><li><a href="arcadia.messages.html">arcadia.messages</a></li></ul><ul><li><a href="arcadia.reflect.html">arcadia.reflect</a></li></ul><ul><li><a href="arcadia.core.html">arcadia.core</a></li></ul></div><div class="content columns-9"><div><h1>arcadia.internal.meval</h1></div><div class="row var-content"><h2 class="name" id="meval">meval</h2><div class="var-details"><div class="row"><h3 class="columns-2">Syntax</h3><div class="columns-10"><ul class="signatures"><li><code>(meval &amp; stuff)</code></li></ul></div></div><div class="row"><h3 class="columns-2">Description</h3><div class="columns-10"><p class="docstring">Evaluates arguments in macro phase and injects result at macro
+  site. Useful for manipulating code evaluation order without having
+  to define named macros.</p></div></div><div class="row"><h3 class="columns-2">Arguments</h3><div class="columns-10"><ul class="arguments"><li class="argument"><code class="name">stuff</code></li></ul></div></div></div><hr /></div><div class="row var-content"><h2 class="name" id="defn-meval">defn-meval</h2><div class="var-details"><div class="row"><h3 class="columns-2">Syntax</h3><div class="columns-10"><ul class="signatures"><li><code>(defn-meval &amp; preamble-and-meval-to-forms)</code></li></ul></div></div><div class="row"><h3 class="columns-2">Description</h3><div class="columns-10"><p class="docstring">Same as defn, except last form in preamble-and-meval-to-forms is
+  evaluated during macro expansion, and the results spliced as code
+  into the tail of the function definition. Useful for many things,
+  such as automating the generation of specific arities for a function
+  that would otherwise be inefficiently variadic.</p></div></div><div class="row"><h3 class="columns-2">Arguments</h3><div class="columns-10"><ul class="arguments"><li class="argument"><code class="name">preamble-and-meval-to-forms</code></li></ul></div></div></div><hr /></div></div><div id="footer">Copyright © 2014-2016 Tims Gardner and Ramsey Nasser</div></div></body></html>
