@@ -129,7 +129,34 @@ p.ns-doc {
 }
 
 .sidebar {
+  font-size: 0.9em;
   padding: 1em;
+  position: fixed;
+  overflow: scroll;
+  height: 100%;
+}
+
+.sidebar ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.sidebar ul ul {
+  padding-left: 1em;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.2em;
+}
+
+.sidebar ul li a {
+  color: #777;
+  text-decoration: none;
+}
+
+.sidebar ul li a.current,
+.sidebar ul li ul.current a {
+  color: black;
 }
 
 #footer {
