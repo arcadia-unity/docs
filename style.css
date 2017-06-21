@@ -2,7 +2,7 @@ body {
   color: #333333;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 12pt;
-  margin: 0;
+  /*margin: 0;*/
 }
 
 h1,
@@ -36,13 +36,39 @@ h2 {
   padding-right: 0;
 }
 
+.columns-1 { width:8.333333%;}
+.columns-2 { width:16.66667%;}
+.columns-3 { width:25%;}
+.columns-4 { width:33.33333%;}
+.columns-5 { width:41.66667%;}
+.columns-6 { width:50%;}
+.columns-7 { width:58.33333%;}
+.columns-8 { width:66.66666%;}
+.columns-9 { width:75%;}
+.columns-10 { width:83.33334%;}
+.columns-11 { width:91.66666%;}
+.columns-12 { width:100%;}
+
+h3 { clear: left; width:16.66667%; float: left; padding-right: 20px; }
+p, h3 + * { width:83.33334%; float: left; }
+p { margin-bottom: 0 }
+/*h3 + *:after {content: "";
+  display: table;
+  clear: both; }
+*/
 hr {
-  height: 2em;
+  height: 5em;
+  clear: both;
+  float: none;
   border: none;
 }
 
 h1 {
   font-size: 3em;
+}
+
+ul {
+  padding-left: 1em;
 }
 
 p.docstring code,
@@ -62,63 +88,26 @@ p.ns-doc {
   font-size: 2em;
 }
 
-.var-details h3 {
-  font-size: 1em;
-}
+h2 {
+  /*margin-top: 5em;*/
+    clear: both;
+  float: none;
 
-.var-details a {
-  color: black;
-  text-decoration: none;
-  border-bottom: 1px dotted #777;
-}
-
-.var-details a:hover {
-  border-bottom: 1px solid #777;
-}
-
-.var-details a:visited {
-  color: #555
-}
-
-.var-details ul.signatures {
-  padding: 0;
-  list-style: none;
-}
-
-.var-details ul.signatures li {
-  margin-bottom: 1em;
-}
-
-.var-details ul.signatures li:last-of-type {
-  margin-bottom: 0;
-}
-
-.var-details ul.arguments {
-  padding-left: 1em;
-}
-
-.var-details ul.arguments em.type {
-  margin-left: 0.5em;
-}
-
-.var-details ul.arguments p.docstring,
-.var-details ul.arguments p.docstring * {
-  display: inline;
-}
-
-.var-details ul.arguments p.docstring::before {
-  content: " — ";
-  display: inline;
 }
 
 
+div.highlighter-rouge {
+  width: 70%;
+  float: none;
+  clear: both;
+}
 
-.var-details .examples pre {
+/*.var-details .examples */ pre {
   border: 1px solid #ddd;
   padding: 0.25em;
 }
 
-.var-details .examples a {
+/*.var-details .examples */ a {
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
